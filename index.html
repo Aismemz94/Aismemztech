@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Web</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AismemzTech</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>¡Hola mundo! 🌎</h1>
-    <p>Mi primera página web en GitHub.</p>
-    <button onclick="saludar()">Haz clic</button>
 
-    <script src="script.js"></script>
+  <header class="navbar">
+    <div class="logo">MiMarca</div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Impulsa tu negocio al siguiente nivel 🚀</h1>
+      <p>Diseño moderno, rápido y optimizado para convertir visitantes en clientes.</p>
+      <button onclick="scrollToContact()">Empezar ahora</button>
+    </div>
+  </section>
+
+  <section id="servicios" class="services">
+    <h2>¿Qué ofrecemos?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Diseño Web</h3>
+        <p>Landing pages modernas y optimizadas.</p>
+      </div>
+      <div class="card">
+        <h3>SEO</h3>
+        <p>Mejoramos tu posicionamiento en Google.</p>
+      </div>
+      <div class="card">
+        <h3>Marketing Digital</h3>
+        <p>Estrategias que generan resultados reales.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Contáctanos</h2>
+    <p>¿Listo para crecer? Escríbenos hoy mismo.</p>
+    <button onclick="mostrarMensaje()">Enviar mensaje</button>
+  </section>
+
+  <footer>
+    <p>© 2026 MiMarca. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
